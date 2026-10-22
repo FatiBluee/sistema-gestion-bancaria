@@ -9,3 +9,12 @@ export function generarId() {
     /* Tomamos solamente una parte del resultado generado. */
         .substring(2, 9)}`;
 }
+ //GENERAR NUMERO DE CUENTA
+export function generarNumeroCuenta() {
+    let numeroCuenta = ''
+    //generar 12 digitos aleatorios
+    for(let i=0; i<12; i+=1) {
+        numeroCuenta += Math.floor(Math.random()*10)
+    }
+    return numeroCuenta
+}
